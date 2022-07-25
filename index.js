@@ -11,5 +11,5 @@ function load(){
 		adecir.innerHTML = `Good Afternoon!`;
 	}else if (hora[0] >= 18 && hora[0] < 24){
 		adecir.innerHTML = `Good Evening!`;
-	}
-}
+	};
+};

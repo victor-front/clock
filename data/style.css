@@ -48,7 +48,6 @@ body{
 .relogio .hora-icone .icone{
 	width: 50%;
 	height: 100%;
-	background-image: url("img/sol.png");
 	background-size: 80%;
 	background-repeat: no-repeat;
 	background-position: center;

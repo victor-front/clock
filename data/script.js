@@ -1,13 +1,14 @@
+//Caminho das imagens/icones do relógio.
 const imgEstrela = 'data/img/estrela.png';
 const imgSolMet = 'data/img/sol-me.png';
 const imgSol = 'data/img/sol.png';
 const imgLua = 'data/img/lua.png';
 
-function load(){
+function load(){//Função que executa microfunções fundamentais para o funcionamento do Relógio.
 	let data = new Date();
 	hora = [data.getHours(), data.getMinutes()];
 	document.querySelector('.hora-exb').innerHTML = `${hora[0]}:${hora[1]}`;
-	setTimeout(()=>{
+	setTimeout(()=>{//Delay que depois de 100 milissegundos, executa o que está dentro do bloco. Isso atualiza o relógio, atualizando a hora e os minutos, também o desenho.
 		if(hora[0] >= 0 && hora[0] < 6){
 			document.querySelector('.icone').style.backgroundImage = `url("${imgEstrela}")`;
 		}else if(hora[0] >= 6 && hora[0] < 12){
@@ -25,4 +26,4 @@ function load(){
 		}
 		load();
 	}, 100);
-}load();
+}load();//Chamar a função load();

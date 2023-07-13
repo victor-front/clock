@@ -18,10 +18,14 @@ body{
 	font-family: Arial, Helvetica, Verdana, sans-serif;
 }
 
+main{
+	flex: 1 0 auto;
+}
+
 .relogio{
 	display: flex;
 	flex-direction: column;
-	margin: 8em auto auto auto;
+	margin: 10em auto auto auto;
 	background-color: #222;
 	width: 400px;
 	height: 200px;
@@ -55,4 +59,22 @@ body{
 
 .relogio .hora-icone .hora h1{
 	font-size: 3em;
+}
+
+footer{
+	flex-shrink: 0;
+	background-color: #222;
+	font-size: .9em;
+	padding: 10px;
+	text-align: center;
+}
+
+footer a{
+	color: #ddd;
+	text-decoration: none;
+	text-align: center;
+}
+
+footer a:hover{
+	text-decoration: underline;
 }
